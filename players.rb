@@ -1,4 +1,6 @@
 class Player
+  # decrease points when lose
+  # have names
 
   LIVES_LEFT = 3
 
@@ -8,16 +10,11 @@ class Player
     self.name = n
   end
 
-end
-
-class P1 < Player
-
-  LIVES_LEFT = 3
-
-end
-
-class P2 < Player
-
-  LIVES_LEFT = 3
+  def life_lost
+    "life lost"
+  end
   
+  # def is_alive?
+  #   if LIVES_LEFT > 0
+  # end
 end

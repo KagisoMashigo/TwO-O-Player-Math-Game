@@ -1,25 +1,17 @@
-class Game
+require './players'
+require './questions'
 
-  def initialize
-    @p1wins = 0
-    @p2wins = 0
-    @p1loss = 0
-    @p2loss = 0
-  end
+class Game
+  #  this class must manage the players and questions
+  #  method track who's turn it is
+  #  this cna be the main file rather that interacts with playes and wuestions with main interacting with this
+  #  1 - it needs to know if game is on or off
 
   def current_player
-    if rand(2) == 0
-      puts "Player 1 starts."
-    else
-      puts "Player 2 starts."
-    end
+    "current"
   end
 
-end
-def current_player
-  if rand(2) == 0
-    puts "Player 1 starts."
-  else
-    puts "Player 2 starts."
-  end
+  # def play
+  #   while 
+
 end

@@ -1,20 +1,28 @@
 # This is the main entrypoint into the program
 # It requires the other files/gems that it needs
 require 'pp'
-require './players'
 require './game'
+require './players'
+require './questions'
 
-puts "Welcome to this super fun Math game! Pick your names."
+puts "Welcome to this super fun Math game!"
+sleep(1)
 
-print "> Player 1?"
-p1 = Player.new("#{$stdin.gets}")
+p1 = Player.new("Player 1")
+p2 = Player.new("Player 2")
 
-print "Nice name, #{p1.name}"
+puts "Player 1 starts."
 
-print "> Player 2?"
-p2 = Player.new("#{$stdin.gets}")
+sleep(1)
 
-print "Good stuff, #{p2.name}"
+puts "#{p1.name}: #{Question.new.question}"
+
+
+# print "> Player 1: #{Question.new.question} "
+
+
+
+
 
 
 
@@ -53,4 +61,17 @@ print "Good stuff, #{p2.name}"
 #   puts "You stumble around and fall on a knife and die.  Good job!"
 # end
 
-# current_player
+# name stuff:
+# print "> Player 1? "
+# p1 = Player.new("#{$stdin.gets}")
+
+# print "Nice name, #{p1.name}"
+
+# print "> Player 2? "
+# p2 = Player.new("#{$stdin.gets}")
+
+# print "Good stuff, #{p2.name}"
+
+# puts "Let the game begin!"
+
+# print "> Player 1? "
