@@ -2,19 +2,15 @@ class Player
   # decrease points when lose
   # have names
 
-  LIVES_LEFT = 3
-
-  attr_accessor :name
+  attr_accessor :name, :lives
 
   def initialize(n)
+    self.lives = 3
     self.name = n
   end
-
-  def life_lost
-    "life lost"
-  end
   
-  # def is_alive?
-  #   if LIVES_LEFT > 0
-  # end
+  def is_dead?
+    lives < 1
+  end
+
 end
